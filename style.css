@@ -31,7 +31,9 @@ main{
     justify-content: space-between;
     align-content: center;
     margin: 0rem 4rem;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
+    /* padding-left: 5vw; */
+    /* padding-left: 5vw; */
 }
 
 main img{
@@ -82,18 +84,23 @@ img:hover{
     font-size: 1.3vw;
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:784px){
     /* body{
         font-size: 2vw;
     } */
     header{
         flex-direction: column;
+        text-align: center;
     }
     main{
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 7rem;
+        /* padding-right: 4rem; */
+        padding: 1rem 4rem 1rem 2rem;
     }
     header h1{
         font-size: 3vw;
+        margin-bottom: 1rem;
     }
     header p{
         font-size: 2vw;
