@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Lato&family=Open+Sans&family=Poppins:wght@300&family=Quicksand&family=Raleway&family=Roboto+Mono&family=Roboto:wght@300&family=Rubik&family=Sansita+Swashed&family=Titan+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #F4F4F4;
+    font-size: 1.3vw;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 6rem ;
+    margin: 2rem 4rem;
+}
+
+header p{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+header h1{
+    font-size: 2.5vw;
+}
+main{
+    display: flex;
+    gap: 4rem 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0rem 4rem;
+    /* border: 2px solid blue; */
+}
+
+main img{
+    width: 20vw;
+    height: auto;
+}
+
+.div1{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 25vw;
+}
+
+/* .div1 > p{
+    transform: rotate(90deg);
+} */
+
+.rotated{
+    height: max-content;
+    /* border: 2px solid black; */
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    /* margin-top: -1.5vw; */
+    font-size: 1vw;
+    white-space: nowrap;
+    
+}
+
+.saba{
+    transform: translateY(2rem);
+}
+
+
+.griff{
+    transform: translateY(2rem);
+}
+img{
+    transition: 0.5s linear;
+    border-radius: 1.4vw;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+img:hover{
+    transform: scale(1.05);
+}
+
+.div1 div:not(.rotated) > p{
+    font-weight: 700;
+    font-size: 1.3vw;
+}
+
+@media screen and (max-width:767px){
+    /* body{
+        font-size: 2vw;
+    } */
+    header{
+        flex-direction: column;
+    }
+    main{
+        justify-content: space-evenly;
+    }
+    header h1{
+        font-size: 3vw;
+    }
+    header p{
+        font-size: 2vw;
+    }
+    main img{
+        width: 30vw;
+    }
+    .griff{
+        transform: translateY(0);
+    }
+    .skylah{
+        transform: translateY(2rem);
+    }
+    .stan{
+        transform: translateY(2rem);
+    }
+    .div1 p{
+        font-size: 2vw;
+    }
+    .div1 div:not(.rotated) p{
+        font-size: 2vw;
+    }
+}
